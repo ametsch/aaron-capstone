@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> Stock Analysis </title>
+  <head>
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <form action="{{url_for('plot')}}" method="POST">
+          <input title="Enter NYSE symbol: " placeholder="NYSE Symbol" type="string" name="symb" required> <br>
+          <button type="submit"> Submit </button>
+        </form>
+      </div>
+    </body>
+</html>
