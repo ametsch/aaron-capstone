@@ -11,6 +11,8 @@ def plot():
     if request.method=='POST':
         symb=request.form["symb"]
         from pandas_datareader import data
+        import pandas as pd
+        pd.core.common.is_list_like = pd.api.types.is_list_like
         from datetime import datetime as dt
         from bokeh.plotting import figure, show, output_file
         from bokeh.embed import components
